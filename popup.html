@@ -1,33 +1,16 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Web Highlighter</title>
-  </head>
-  <body>
-    <header>
-      <h2>Web Highlighter</h2>
-      <select id="colorSelector">
-        <option value="#ffff00">Yellow</option>
-        <option value="#90ee90">Green</option>
-        <option value="#add8e6">Blue</option>
-        <option value="#ffb6c1">Pink</option>
-        <option value="#d3d3d3">Gray</option>
-      </select>
-    </header>
-
-    <div class="controls">
-      <input type="text" id="searchBox" placeholder="Search highlights..." />
-    </div>
-
-    <div class="controls">
-      <button id="exportBtn">Export Highlights</button>
-      <button id="clearAllBtn">Clear All</button>
-    </div>
-
-    <div id="highlights-container">
-      <ul id="highlightList"></ul>
-    </div>
-
-    <script src="popup.js"></script>
-  </body>
+<head>
+  <title>Highlights</title>
+  <style>
+    body { font-family: sans-serif; padding: 10px; width: 200px; }
+    ul { list-style-type: disc; padding-left: 20px; }
+    li { margin-bottom: 5px; }
+  </style>
+</head>
+<body>
+  <h2>Highlights</h2>
+  <ul id="highlightList"></ul>
+  <script src="popup.js"></script>
+</body>
 </html>
